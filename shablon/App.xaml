@@ -1,0 +1,167 @@
+﻿<Application x:Class="shablon.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:shablon"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Разработка стиля и триггеров для кнопок -->
+        <Style TargetType="{x:Type Button}" x:Name="Butn_style">
+
+            <!-- Установка цвета переднего плана кнопки -->
+            <Setter Property="Foreground" Value="#FFFFBA00"/>
+            <!-- Задание ширины кнопки -->
+            <Setter Property="Width" Value="125"/>
+            <!-- Задание высоты кнопки -->
+            <Setter Property="Height" Value="50"/>
+            <!-- Задание размера шрифта кнопки -->
+            <Setter Property="FontSize" Value="15"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+            <!-- Задание фонового цвета кнопки -->
+            <Setter Property="Background" Value="#F5F5DC"></Setter>
+
+            <!-- Триггеры для кнопки -->
+            <Style.Triggers>
+                <!-- Триггер для наведения мыши -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!-- Изменение размера шрифта при наведении -->
+                    <Setter Property="FontSize" Value="16.5"/>
+                </Trigger>
+                <!-- Триггер для нажатия кнопки -->
+                <Trigger Property="IsPressed" Value="True">
+                    <!-- Изменение фонового цвета при нажатии -->
+                    <Setter Property="Background" Value="DarkBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Разработка стиля для текстовых блоков -->
+        <Style TargetType="{x:Type TextBlock}" x:Name="Text_block_style">
+            <!-- Задание шрифта текстового блока -->
+            <Setter Property="FontFamily" Value="Franklin Gothic Medium"/>
+            <!-- Задание размера шрифта текстового блока -->
+            <Setter Property="FontSize" Value="15"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+        </Style>
+
+        <!-- Разработка стиля и триггеров для флажков (checkbox) -->
+        <Style TargetType="{x:Type CheckBox}" x:Name="Checkbox_style">
+            <!-- Задание шрифта флажка -->
+            <Setter Property="FontFamily" Value="Candara"/>
+            <!-- Задание размера шрифта флажка -->
+            <Setter Property="FontSize" Value="15"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+            <!-- Задание ширины флажка -->
+            <Setter Property="Width" Value="125"/>
+
+            <!-- Триггер для наведения мыши -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!-- Изменение размера шрифта при наведении -->
+                    <Setter Property="FontSize" Value="16.5"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Разработка стиля для текстовых полей (textbox) -->
+        <Style TargetType="{x:Type TextBox}" x:Name="Textbox_style">
+            <!-- Задание шрифта текстового поля -->
+            <Setter Property="FontFamily" Value="Candara"/>
+            <!-- Задание размера шрифта текстового поля -->
+            <Setter Property="FontSize" Value="17"/>
+            <!-- Задание ширины текстового поля -->
+            <Setter Property="Width" Value="125"/>
+            <!-- Задание высоты текстового поля -->
+            <Setter Property="Height" Value="25"/>
+            <!-- Задание фонового цвета текстового поля -->
+            <Setter Property="Background" Value="#F5F5DC"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+            <!-- Задание цвета переднего плана текстового поля -->
+            <Setter Property="Foreground" Value="#FFFFBA00"/>
+
+            <!-- Триггеры для текстового поля -->
+            <Style.Triggers>
+                <!-- Триггер для наведения мыши -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!-- Изменение размера шрифта при наведении -->
+                    <Setter Property="FontSize" Value="16.5"/>
+                </Trigger>
+                <!-- Триггер для получения фокуса текстовым полем -->
+                <Trigger Property="IsFocused" Value="True">
+                    <!-- Изменение фонового цвета и цвета переднего плана при получении фокуса -->
+                    <Setter Property="Background" Value="SaddleBrown"/>
+                    <Setter Property="Foreground" Value="#F5F5DC"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Разработка стиля для поля ввода пароля (password box) -->
+        <Style TargetType="{x:Type PasswordBox}" x:Name="Password_style">
+            <!-- Задание шрифта поля ввода пароля -->
+            <Setter Property="FontFamily" Value="Candara"/>
+            <!-- Задание размера шрифта поля ввода пароля -->
+            <Setter Property="FontSize" Value="15"/>
+            <!-- Задание ширины поля ввода пароля -->
+            <Setter Property="Width" Value="125"/>
+            <!-- Задание высоты поля ввода пароля -->
+            <Setter Property="Height" Value="25"/>
+            <!-- Задание фонового цвета поля ввода пароля -->
+            <Setter Property="Background" Value="#F5F5DC"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+            <!-- Задание цвета переднего плана поля ввода пароля -->
+            <Setter Property="Foreground" Value="#FFFFBA00"/>
+
+            <!-- Триггеры для поля ввода пароля -->
+            <Style.Triggers>
+                <!-- Триггер для наведения мыши -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!-- Изменение размера шрифта при наведении -->
+                    <Setter Property="FontSize" Value="16.5"/>
+                </Trigger>
+                <!-- Триггер для получения фокуса поля ввода пароля -->
+                <Trigger Property="IsFocused" Value="True">
+                    <!-- Изменение фонового цвета и цвета переднего плана при получении фокуса -->
+                    <Setter Property="Background" Value="SaddleBrown"/>
+                    <Setter Property="Foreground" Value="#F5F5DC"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Разработка стиля и триггеров для кнопок переключения (toggle button) -->
+        <Style TargetType="{x:Type ToggleButton}" x:Name="Butdn_style">
+            <!-- Задание шрифта кнопки переключения -->
+            <Setter Property="FontFamily" Value="Candara"/>
+            <!-- Задание цвета переднего плана кнопки переключения -->
+            <Setter Property="Foreground" Value="#FFFFBA00"/>
+            <!-- Задание ширины кнопки переключения -->
+            <Setter Property="Width" Value="125"/>
+            <!-- Задание высоты кнопки переключения -->
+            <Setter Property="Height" Value="50"/>
+            <!-- Задание размера шрифта кнопки переключения -->
+            <Setter Property="FontSize" Value="15"/>
+            <!-- Задание нормальной растяжки шрифта -->
+            <Setter Property="FontStretch" Value="Normal"/>
+            <!-- Задание фонового цвета кнопки переключения -->
+            <Setter Property="Background" Value="#F5F5DC"/>
+
+            <!-- Триггеры для кнопки переключения -->
+            <Style.Triggers>
+                <!-- Триггер для наведения мыши -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <!-- Изменение размера шрифта при наведении -->
+                    <Setter Property="FontSize" Value="16.5"/>
+                </Trigger>
+                <!-- Триггер для нажатия кнопки переключения -->
+                <Trigger Property="IsPressed" Value="True">
+                    <!-- Изменение фонового цвета при нажатии -->
+                    <Setter Property="Background" Value="DarkBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Application.Resources>
+
+</Application>

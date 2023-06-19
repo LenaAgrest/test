@@ -1,0 +1,14 @@
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\shablon.csproj.AssemblyReference.cache
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\shablon.csproj.SuggestedBindingRedirects.cache
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\MainWindow.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\Other\menu.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\Parts\part_one.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\AddEdits\part_one_addedit.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\Parts\part_three.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\AddEdits\part_three_addedit.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\AddEdits\part_two_addedit.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\Other\vxod.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\App.g.cs
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\shablon_MarkupCompile.cache
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\shablon_MarkupCompile.lref
+C:\Users\rene\source\repos\shablon\shablon\obj\Debug\Parts\part_two.g.cs

@@ -1,0 +1,25 @@
+﻿<Page x:Class="shablon.vxod"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:shablon"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="vxod">
+
+    <Grid>
+        <TextBlock x:Name="passwordTextBlock" Text="" Margin="350,248,-726,-332" RenderTransformOrigin="0.5,0.5" Height="NaN" Width="NaN"/>
+
+
+        <Button x:Name="Enter" Click="Enter_Click" Content="Войти" HorizontalAlignment="Left" Margin="349,292,0,0" VerticalAlignment="Top" Height="40"/>
+        <CheckBox x:Name="Remember" Content="Запомнить меня" HorizontalAlignment="Left" Margin="349,378,0,0" VerticalAlignment="Top" Height="20" Width="136"/>
+        <TextBox HorizontalAlignment="Left" Margin="351,174,0,0" TextWrapping="Wrap" x:Name="logintxtbx" VerticalAlignment="Top" Width="120" />
+
+        <PasswordBox HorizontalAlignment="Left" Margin="351,248,0,0" x:Name="passtxtbx" VerticalAlignment="Top" Width="120" PasswordChar="*" />
+        <TextBlock HorizontalAlignment="Left" Margin="305,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Логин"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="295,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Пароль"/></TextBlock>
+        <ToggleButton   x:Name="ToggleButton" Content="Показать"  Height="Auto" Width="Auto" Margin="480,247,166,139" Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked" />
+    </Grid>
+</Page>
